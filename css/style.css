@@ -295,8 +295,14 @@ header {
 	color: black;
 }
 
+.boxes .box:last-child .text h1 {
+	color: #bd3efe;
+	font-size: 40px;
+}
+
 .boxes .box:last-child .text p {
 	color: #777;
+	line-height: 2;
 }
 
 /* End */
