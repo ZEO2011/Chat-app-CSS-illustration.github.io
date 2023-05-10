@@ -1,0 +1,302 @@
+/* Start Global Rules */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	background: #fafafa;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+i {
+	font-weight: 900;
+	color: white;
+}
+
+/* End Global Rules */
+
+/* Start */
+
+.bg {
+	position: absolute;
+	width: 410px;
+	height: 690px;
+	top: -190px;
+	left: -70px;
+	border-radius: 500px;
+	transform: rotate(179deg);
+	background-image: linear-gradient(
+		to right,
+		hsl(264, 100%, 61%),
+		60%,
+		hsl(293, 100%, 63%)
+	);
+}
+
+.boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone {
+	position: relative;
+	width: 280px;
+	height: 650px;
+	border-radius: 22px;
+	box-shadow: 0 0 20px #5f5e5e;
+	padding: 15px;
+	background: white;
+}
+
+.phone .camera {
+	position: absolute;
+	height: 35px;
+	width: 55%;
+	background: white;
+	inset: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-left-radius: 14.5px;
+	border-bottom-right-radius: 14.5px;
+	z-index: 100;
+}
+
+.body {
+	width: 100%;
+	height: 100%;
+	background: hsl(270, 20%, 96%);
+	border-bottom-left-radius: 14.5px;
+	border-bottom-right-radius: 14.5px;
+}
+
+header {
+	position: sticky;
+	background-image: linear-gradient(
+		to right,
+		hsl(264, 100%, 61%),
+		60%,
+		hsl(293, 100%, 63%)
+	);
+	width: 100%;
+	height: 75px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	display: flex;
+	padding-top: 15px;
+	margin-bottom: 5px;
+}
+
+.go-out-cont {
+	height: 100%;
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	width: 70%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	padding: 1px;
+	background: white;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.text {
+	color: white;
+	font-size: 14px;
+}
+
+.text .name {
+	margin-bottom: 6px;
+}
+
+.text .status {
+	font-size: 10px;
+	color: hsl(270, 7%, 64%);
+}
+
+.settings-box {
+	height: 100%;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.massages .massage {
+	width: 100%;
+	padding: 5px;
+}
+
+.massages .massage.right {
+	display: flex;
+	justify-content: end;
+}
+
+.massages .massage h6 {
+	font-weight: normal;
+	font-size: 0.0000011.01%;
+	padding: 10px;
+	border-radius: 10px;
+	width: 80%;
+}
+
+.massages .massage.right h6 {
+	background: white;
+	box-shadow: 0 5px 10px #ddd;
+}
+
+.massages .massage.left h6 {
+	color: hsl(271, 36%, 24%);
+	background: hsl(266, 17%, 92%);
+}
+
+.massages .massage.right img {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+.massages .massage.left .box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: linear-gradient(
+		to right,
+		hsl(264, 100%, 61%),
+		60%,
+		hsl(293, 100%, 63%)
+	);
+	width: 80%;
+	height: 40px;
+	border-radius: 10px 10px 10px 3px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.massages .massage.left .box div:not(.price) {
+	display: flex;
+	align-items: center;
+}
+
+.massages .massage.left .box div:not(.price) input {
+	appearance: unset;
+	margin-right: 10px;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	background: transparent;
+	border: 1px solid #ddd;
+}
+
+.massages .massage.left .box h3 {
+	font-size: 1px;
+	color: white;
+}
+
+.massages .massage.left .box h3:not(.price h3) {
+	font-weight: normal;
+}
+
+.write {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.write form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.write form input::placeholder {
+	font-size: 10px;
+}
+
+.write form input[type="text"] {
+	width: 100%;
+	height: 30px;
+	padding: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border: none;
+	border-radius: 10px;
+	position: relative;
+	padding-right: 60px;
+}
+
+.write form input[type="text"]:focus {
+	outline: none;
+}
+
+.write form input[type="checkbox"] {
+	position: absolute;
+	right: 40px;
+	appearance: unset;
+	padding: 8;
+	background: #412a56;
+	border-radius: 50%;
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.write form input[type="checkbox"]::before {
+	content: "\f061";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	color: white;
+	font-size: 12px;
+	position: relative;
+	top: 1px;
+}
+
+@media (max-width: 767px) {
+	.boxes .box:last-child {
+		text-align: center;
+	}
+}
+
+.boxes .box:last-child .text {
+	color: black;
+}
+
+.boxes .box:last-child .text p {
+	color: #777;
+}
+
+/* End */
